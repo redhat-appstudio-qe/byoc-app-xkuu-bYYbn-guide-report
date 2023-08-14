@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: zzbh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-rbxw-tenant/byoc-app-xkuu/zzbh@sha256:3a866e2b53e180b64103faf0d8a4bf06e29061b27b796313d4e25179a4d02be3
+        name: my-java-quarkus
+        resources: {}
+status: {}
